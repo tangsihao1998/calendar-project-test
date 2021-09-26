@@ -6,7 +6,6 @@ class CalendarPage extends Component {
     return (
       <div class="CalendarPage">
         <div>
-          TESKLJADKLSAJDKLSAJkl
         </div>
       </div>
     )
