@@ -1,0 +1,7 @@
+const callAPItoGetData = () => {
+
+}
+
+export {
+  callAPItoGetData,
+}

@@ -1,0 +1,14 @@
+@mixin woff2font($font-family, $font-weight, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file+".woff2") format("woff2");
+    font-weight: $font-weight;
+    font-style: normal;
+    font-display: auto;
+  }
+}
+
+@include woff2font("Montserrat", 200, "./../assets/fonts/Montserrat/Montserrat-Thin");
+@include woff2font("Montserrat", 400, "./../assets/fonts/Montserrat/Montserrat-Medium");
+@include woff2font("Montserrat", 500, "./../assets/fonts/Montserrat/Montserrat-SemiBold");
+@include woff2font("Montserrat", 600, "./../assets/fonts/Montserrat/Montserrat-Bold");

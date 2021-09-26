@@ -1,0 +1,1 @@
+export const supportedAvatarExtensions = ['image/jpg', 'image/jpeg', 'image/png'];

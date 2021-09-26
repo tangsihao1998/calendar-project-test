@@ -1,0 +1,9 @@
+{
+  "BASEURL": "http://localhost:3000",
+  "AXIOS_BASEURL": "https://driversystemapp.herokuapp.com/api-user/v1/",
+  "GOOGLE_CLIENT_ID_OAUTH": "804226360917-l4bb1ut75m8d0qhgec3qm33o2acr0c5j.apps.googleusercontent.com",
+  "GOOGLE_MAP_KEY": "AIzaSyDdUs8Sg6mseRcBrOesOQYoVv7kVAseO90",
+  "FACEBOOK_APP_ID": "649433925668357",
+
+  "SUPPORT_EMAIL": "driverteam6@gmail.com"
+}

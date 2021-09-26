@@ -1,0 +1,9 @@
+{
+  "BASEURL": "https://www.go-vn.com/",
+  "AXIOS_BASEURL": "https://driversystemapp.herokuapp.com/api-user/v1/",
+  "GOOGLE_CLIENT_ID_OAUTH": "804226360917-neind4kfne0fe9aq4s4msgigeev64ua0.apps.googleusercontent.com",
+  "GOOGLE_MAP_KEY": "AIzaSyDdUs8Sg6mseRcBrOesOQYoVv7kVAseO90",
+  "FACEBOOK_APP_ID": "311617366571868",
+
+  "SUPPORT_EMAIL": "driverteam6@gmail.com"
+}

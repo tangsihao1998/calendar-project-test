@@ -1,0 +1,52 @@
+// Screens
+$mobile-width: 640px;
+$tablet-width: 1024px;
+
+// Khai báo responsive
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$mobile-width + 1px}) and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$tablet-width + 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet-and-mobile {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin ie11 {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+
+.hide-in-desktop {
+  @include desktop {
+    display: none;
+  }
+}
+
+.hide-in-tablet {
+  @include tablet {
+    display: none;
+  }
+}
+
+.hide-in-mobile {
+  @include mobile {
+    display: none;
+  }
+}
