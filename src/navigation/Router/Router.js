@@ -18,7 +18,6 @@ class Routers extends PureComponent {
           <React.Fragment>
             <Switch>
               {RouterConfig.map((route, i) => {           
-                console.log(route)     
                 const RenderComponent = (
                   <Route
                     exact={route.exact}

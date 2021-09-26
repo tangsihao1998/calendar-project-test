@@ -29,7 +29,6 @@ class SmallCalendar extends Component {
     this.setState({
       value: $event
     })
-    console.log("🚀 ~ file: SmallCalendar.js ~ line 18 ~ SmallCalendar ~ event", $event)
   }
 
   render() {
@@ -48,12 +47,10 @@ class SmallCalendar extends Component {
 }
 
 const mapStateToProps = state => ({
-  // openAddDateModal: selectors.getOpenAddDateModal(state),
 });
 
 const mapDispatchToProps = dispatch => ({
   setSelectedDate: (selectedDate) => dispatch(actions.setSelectedDate(selectedDate)),
-  // setDisableAddDateModal: () => dispatch(actions.setDisableAddDateModal()),
 });
 
 

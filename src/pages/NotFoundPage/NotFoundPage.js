@@ -12,7 +12,7 @@ const NotFoundPage = (props) => {
   return (
     <React.Fragment>
       <div className="NotFoundPage">
-        <img className="NotFound__images" src="/assets/png/404.png" alt="Not Found"/>
+        <img className="NotFound__images" src="./../../assets/png/404.png" alt="Not Found"/>
         <h1 className='NotFound__title'>Trang Không Tìm Thấy</h1>
         <Button className='NotFound__btn' color="primary" onClick={() => props.history.push('/')} >
           Trở Về Trang Chủ

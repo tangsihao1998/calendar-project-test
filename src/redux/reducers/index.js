@@ -6,5 +6,5 @@ import initialState from 'src/redux/initialState';
 import calendarReducer from 'reducers/calendarReducer';
 // export State
 export default combineReducers({
-  calendar: calendarReducer(initialState.calendarPage)
+  calendar: calendarReducer(initialState.calendar)
 });
