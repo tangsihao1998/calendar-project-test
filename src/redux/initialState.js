@@ -1,5 +1,6 @@
 export default {
-  calendarPage: {
+  calendar: {
     view: false,
+    selectedDate: null,
   },
 };

@@ -1,0 +1,58 @@
+@import 'constants/scssFiles/responsive.scss';
+@import 'constants/scssFiles/color.scss';
+
+.CalendarScreen {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  @include mobile {
+    justify-content: center;
+  }
+  .LeftSide__Container {
+    min-height: calc(100vh - 20px);
+    background-color: white;
+    @include mobile {
+      min-width: 300px;
+      background-color: unset;
+    }
+    .Event__Container {
+      border-top: 0.5px solid #d5d5d5;
+      padding: 25px 10px;
+      .EventContainer__Header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .Header__Left {
+          .Header__Title {
+            font-size: 20px;
+            font-weight: bold;
+            color: $DarkBlue;
+          }
+          .Header__DateTime {
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #6b6b6b;
+          }
+        }
+        .Header__Right {
+          .ViewAll__Btn {
+            margin-top: 2px;
+            border: unset;
+            border-radius: 15px;
+            padding: 6px 15px;
+            font-size: 12px;
+            color: white;
+            background-color: $DarkBlue;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .RightSide__Container {
+    background-color: white;
+  }
+}

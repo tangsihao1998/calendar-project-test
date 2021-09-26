@@ -1,3 +1,11 @@
+@import 'constants/scssFiles/color.scss';
+@import 'constants/scssFiles/responsive.scss';
+
 .CalendarPage {
-  background-color:  red;
+  min-height: calc(100vh - 20px);
+  padding: 10px 50px;
+  background-color: $CalendarTileColor;
+  @include mobile {
+    padding: 10px;
+  }
 }

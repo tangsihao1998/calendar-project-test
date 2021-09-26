@@ -1,0 +1,107 @@
+@import 'constants/scssFiles/color.scss';
+@import 'constants/scssFiles/responsive.scss';
+
+.EventCard {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+  .Hightlight {
+    width: 7px;
+    border-radius: 5px 0px 0px 5px;
+    &.darkBlue{
+      background-color: $DarkBlue;
+    }
+    &.darkOrange {
+      background-color: $DarkOrange;
+    }
+  }
+  .Right__Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+    border-radius: 0px 10px 10px 0px;
+    &.darkBlue{
+      background-color: $DarkBlue;
+    }
+    &.darkOrange {
+      background-color: $DarkOrange;
+    }
+    &.lightOrange {
+      background-color: $LightOrange;
+    }
+    .Left__Content {
+      .Content__Title {
+        font-weight: bold;
+        &.darkBlue {
+          color: $DarkBlue;
+        }
+        &.white {
+          color: white;
+        }
+      }
+      .Content__time {
+        margin-top: 4px;
+        margin-bottom: 3px;
+        font-size: 14px;
+        &.darkBlue {
+          color: $DarkBlue;
+        }
+        &.white {
+          color: white;
+        }
+      }
+      .Content__Profile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 5px;
+        .client__avatar {
+          width: 12px;
+          height: 12px;
+          background-color: white;
+          padding: 8px;
+          border-radius: 50%;
+        }
+        .redirectLink {
+          margin-left: 10px;
+          font-size: 12px;
+          text-decoration: underline;
+          cursor: pointer;
+          &.darkBlue {
+            color: $DarkBlue;
+          }
+          &.white {
+            color: white;
+          }
+        }
+      }
+    }
+    .Right__Content {
+      .streamButton {
+        padding: 10px;
+        border: unset;
+        border-radius: 50%;
+        cursor: pointer;
+        &.darkBlue{
+          background-color: $DarkBlue;
+        }
+        &.white {
+          background-color: white;
+        }
+        .stream__icon {
+          height: 20px;
+          width: 20px;
+          &.darkBlue{
+            color: $DarkBlue;
+          }
+          &.white {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
