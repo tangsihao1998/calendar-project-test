@@ -4,7 +4,7 @@ import React, { PureComponent } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import RouterConfig from 'navigation/RouterConfig';
 // import components
-import App from './../App';
+import App from 'navigation/App';
 
 class Routers extends PureComponent {
   constructor(props) {

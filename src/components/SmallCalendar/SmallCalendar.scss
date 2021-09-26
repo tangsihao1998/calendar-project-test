@@ -1,0 +1,63 @@
+@import 'constants/scssFiles/color.scss';
+@import 'constants/scssFiles/responsive.scss';
+
+.SmallCalendar {
+  border: unset !important;
+  padding: 15px 20px;
+  @include mobile {
+    background: unset !important;
+  }
+  .react-calendar__navigation {
+    justify-content: center;
+    align-items: center;
+    .react-calendar__navigation__label {
+      height: 100%;
+      flex-grow: unset !important;
+      font-size: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      color: $DarkBlue;
+    }
+    .react-calendar__navigation__next-button {
+      height: 100%;
+      font-size: 30px;
+      color: #0F4C81;
+      font-weight: 500;
+    }
+    .react-calendar__navigation__next2-button {
+      display: none;
+    }
+    .react-calendar__navigation__prev-button {
+      height: 100%;
+      font-size: 30px;
+      color: #0F4C81;
+      font-weight: 500;
+    }
+    .react-calendar__navigation__prev2-button {
+      display: none;
+    }
+  }
+  .react-calendar__viewContainer {
+    color: #5e5e5e;
+    .react-calendar__month-view__weekdays__weekday {
+      @include mobile {
+        font-size: 0.9em;
+      }
+    }
+    .CalendarTitle {
+      color: #5e5e5e;
+      font-size: 12px;
+      border-radius: 50%;
+      @include mobile {
+        font-size: 0.8em;
+      }
+    }
+    .react-calendar__tile--active {
+      background-color: $LightBlue;
+      color: white;
+    }
+    .react-calendar__month-view__days__day--neighboringMonth {
+      color: #c4c4c4;
+    }
+  }
+}
